@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+#NavContainer{
+    width: 100vw;
+    max-height: 50px;
+    display: flex;
+    justify-content: center;
+    
+    
+
+
+}
+#Navbar{
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid white;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding: 0px 50px;
+   
+    align-items: center;
+
+    p{
+        font-family: "Caveat Brush", cursive;
+        color: #97edaa;
+        font-size: 25px;
+        margin: 0;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 60px;
+        color: white;
+
+        
+    }
+
+   .navLink{
+    color: white;
+    cursor: pointer;
+
+    
+   }
+
+    
+    
+    
+   .navLink:hover{
+    color: #97edaa;
+    transition: 200ms;
+   }
+    
+
+}
