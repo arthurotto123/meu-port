@@ -1,0 +1,45 @@
+#SkilsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    gap: 100px;
+
+    h2{
+        font-size: 3rem;
+        color: #97edaa;
+    }
+
+    #SkilsContent{
+        display: flex;
+       flex-wrap: wrap;
+       gap: 20px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+
+        .faContent{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            background-color: #101010;
+            border-radius: 8px;
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(151, 237, 170, 0.274);
+
+
+            .icon{
+                font-size: 7rem;
+                color: #97edaa;
+            }
+        }
+
+        .faContent:hover{
+            background-color: #646060;
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import PillNav from '../components/PillNav';
 import logo from '../assets/logo.png';
+import { href } from 'react-router-dom';
 
 function Navbar() {
     return(
@@ -10,6 +11,7 @@ function Navbar() {
   items={[
     { label: 'Inicio', href: '/home' },
     { label: 'Sobre', href: '/about' },
+    {label: 'Habilidades', href: '/skils'},
     { label: 'Projetos', href: '/projects' },
     { label: 'Contato', href: '/contact' }
   ]}

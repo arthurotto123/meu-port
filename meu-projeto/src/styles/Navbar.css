@@ -201,7 +201,7 @@
   height: 2px;
   background: var(--pill-bg, #fff);
   border-radius: 1px;
-  transition: all 0.01s ease;
+  transition: all 0.2s ease;
   transform-origin: center;
 }
 
