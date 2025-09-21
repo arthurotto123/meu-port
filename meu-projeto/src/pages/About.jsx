@@ -8,7 +8,7 @@ function About() {
       
       
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis nobis similique eos aperiam vero dignissimos? Dicta in beatae amet corporis aliquid, quos labore accusamus ea eaque modi commodi facere nobis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima consequuntur eum, dolor quisquam laboriosam earum voluptate? Rerum ut maxime saepe explicabo adipisci vitae quasi commodi laboriosam nulla. Expedita, consequuntur fuga.
+          Sou estudante de Engenharia de Software e técnico em informática. Tenho conhecimentos em HTML, CSS, JavaScript, React.js, Python e bancos de dados como MongoDB MySQL e PostgreSQL. Participei de cursos da Cisco, Fundação Bradesco e IFRS, focando no desenvolvimento Front End. Sou dinâmico, pontual e estou sempre disposto a aprender e contribuir com o time.
         </p>
     </section>
 

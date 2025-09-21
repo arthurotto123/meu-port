@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faJs, faNodeJs, faCss3, faReact,  } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faJs, faNodeJs, faCss3, faReact, faGithub, faFigma, faPython, faGitAlt} from '@fortawesome/free-brands-svg-icons';
 import '../styles/Skils.css'
 
 
@@ -23,6 +23,18 @@ function Skils() {
     </div>
     <div className="faContent">
       <FontAwesomeIcon className='icon' icon={faReact}  /> React.js 
+    </div>
+     <div className="faContent">
+      <FontAwesomeIcon className='icon' icon={faGithub}  /> GitHub 
+    </div>
+     <div className="faContent">
+      <FontAwesomeIcon className='icon' icon={faPython}  /> Python 
+    </div>
+     <div className="faContent">
+      <FontAwesomeIcon className='icon' icon={faFigma}  /> Figma 
+    </div>
+     <div className="faContent">
+      <FontAwesomeIcon className='icon' icon={faGitAlt}  /> GIT 
     </div>
     </div>
     </section>

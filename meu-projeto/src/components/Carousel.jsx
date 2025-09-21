@@ -9,7 +9,7 @@ const DEFAULT_ITEMS = [
   {
     title: 'Tudo-Carros',
     description: 'Este é um catálogo digital de veículos desenvolvidos em Node.js, Express, MongoDB e JavaScript no frontend .A aplicação permite cadastrar, consultar e visualizar informações desenvolvidas sobre carros de diferentes marcas, modelos e versões.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'CSS'],
+    technologies: ['React ', 'Node.js ', 'MongoDB ', 'Express', 'CSS'],
     id: 1,
     icon: <FiFileText className="carousel-icon" />,
     image: '/imgsprojects/tudo-carros.png',
@@ -17,24 +17,24 @@ const DEFAULT_ITEMS = [
     repositoryLink: 'https://github.com/arthurotto123/Tudo-Carros'
   },
   {
-    title: 'Animations Showcase',
+    title: 'Landing Page: Plano de saúde',
     description: 'Smooth animations for your projects.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Framer Motion'],
+    technologies: ['HTML ', 'CSS ', 'JavaScript ', 'React.js'],
     id: 2,
     icon: <FiCircle className="carousel-icon" />,
-    image: '/images/sample2.jpg',
-    link: 'https://animations.example.com',
-    repositoryLink: 'https://github.com/your-repo/animations-showcase'
+    image: '/imgsprojects/Plano-saude.png',
+    link: 'https://segmedic.vercel.app/',
+    repositoryLink: 'https://vercel.com/arthurotto123s-projects/segmedic'
   },
   {
-    title: 'Components Library',
+    title: 'Previsão do tempo',
     description: 'Reusable components for your projects.',
-    technologies: ['React', 'Storybook', 'Styled Components'],
+    technologies: ['React', 'JavaScript', 'ApiRest','HTML','CSS'],
     id: 3,
     icon: <FiLayers className="carousel-icon" />,
-    image: '/images/sample3.jpg',
-    link: 'https://components.example.com',
-    repositoryLink: 'https://github.com/your-repo/components-library'
+    image: '/imgsprojects/prevtempo.png',
+    link: 'https://prevtemp-6n27.vercel.app/',
+    repositoryLink: 'https://github.com/arthurotto123/prevtemp'
   },
   {
     title: 'Beautiful Backgrounds',

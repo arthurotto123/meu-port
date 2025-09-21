@@ -16,7 +16,7 @@ function Projects(){
     round={false}
   />
 </div>
-<p>Arraste para o lado para ver mais projetos</p>
+      <span>Arraste para conferir mais projetos</span>
     </section>
   )
 }
