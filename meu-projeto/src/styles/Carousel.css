@@ -1,0 +1,193 @@
+/* Carousel.css */
+
+:root {
+  --background-dark: #1a1a1a;
+  --card-background: #282828;
+  --text-light: #f0f0f0;
+  --text-green: #6aff82;
+  --button-primary-bg: #6aff82;
+  --button-primary-text: #1a1a1a;
+  --button-secondary-border: #6aff82;
+  --button-secondary-text: #6aff82;
+  --indicator-active: #6aff82;
+  --indicator-inactive: #555;
+  --placeholder-image-bg: #222;
+}
+
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 12000px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+.carousel-track {
+  display: flex;
+  height: auto;
+  align-items: flex-start;
+  cursor: grab;
+}
+
+.carousel-track:active {
+  cursor: grabbing;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: var(--base-item-width, 300px);
+  background-color: var(--card-background);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  color: var(--text-light);
+}
+
+.carousel-item-image-wrapper {
+  width: 100%;
+  height: 600px; /* Alterado de 180px para 360px */
+  background-color: var(--placeholder-image-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-item-main-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-image-placeholder {
+  color: var(--text-green);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.carousel-item-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 0;
+  color: var(--text-light);
+}
+
+.project-technologies {
+  font-size: 0.9em;
+  color: var(--text-green);
+  margin: 0;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.project-button {
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.1s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-button:hover {
+  transform: translateY(-2px);
+}
+
+.project-button:active {
+  transform: translateY(0);
+}
+
+.project-button.primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border: 2px solid var(--button-primary-bg);
+}
+
+.project-button.primary:hover {
+  background-color: #55e66b;
+  border-color: #55e66b;
+}
+
+.project-button.secondary {
+  background-color: transparent;
+  color: var(--button-secondary-text);
+  border: 2px solid var(--button-secondary-border);
+}
+
+.project-button.secondary:hover {
+  background-color: rgba(106, 255, 130, 0.1);
+}
+
+.carousel-indicators-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0 0;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--indicator-inactive);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-indicator.active {
+  background-color: var(--indicator-active);
+  transform: scale(1.2);
+}
+
+.carousel-container.round {
+  border-radius: 50%;
+}
+
+.carousel-item.round {
+  border-radius: 50%;
+}
+
+.carousel-icon {
+  font-size: 2em;
+  color: var(--text-green);
+}
+
+@media (max-width: 400px) {
+  .carousel-container {
+    max-width: 90%;
+  }
+
+  .carousel-item {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 1.5em;
+  }
+
+  .project-button {
+    flex: 1 1 auto;
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+}

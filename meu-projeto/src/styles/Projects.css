@@ -1,0 +1,12 @@
+#ProjectsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 100px;
+
+    h2{
+        color: #97edaa;
+        font-size: 3rem;
+    }
+}
