@@ -1,22 +1,29 @@
-import { Link } from "react-router-dom";
-import '../styles/Navbar.css';
+import PillNav from '../components/PillNav';
+import logo from '../assets/logo.png';
 
 function Navbar() {
-    return ( 
-        <section id="NavContainer">
-        <nav id="Navbar">
-            <p>&lt;Arthur Coelho/ &gt;</p>
-            <ul className="nav-list">
-                <li><Link className="navLink"  to="/">Início</Link></li>
-                <li><Link className="navLink" to="/about">Sobre min</Link></li>
-                <li><Link className="navLink" to="/skils">Habilidades</Link></li>
-                <li><Link className="navLink" to="/projects">Projetos</Link></li>
-                <li><Link className="navLink" to="/contact">Contato</Link></li>
-            </ul>
-        </nav>
-        </section>
-
+    return(
+        <>
+<PillNav
+  logo={logo}
+  logoAlt="Company Logo"
+  items={[
+    { label: 'Inicio', href: '/home' },
+    { label: 'Sobre', href: '/about' },
+    { label: 'Projetos', href: '/projects' },
+    { label: 'Contato', href: '/contact' }
+  ]}
+  activeHref="/"
+  className="custom-nav"
+  ease="power2.easeOut"
+  baseColor="#000000"
+  pillColor="#ffffff"
+  hoveredPillTextColor="#ffffff"
+  pillTextColor="#000000"
+/>
+</>
     )
+
 }
 
 export default Navbar;

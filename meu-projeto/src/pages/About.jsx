@@ -1,5 +1,12 @@
+import '../styles/About.css'
+
 function About() {
-  return <h1>About Page</h1>;
+  return (
+    <section id="AboutCo">
+      
+    </section>ntainer
+    
+  )
 }
 
 export default About;
